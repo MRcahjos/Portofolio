@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio — Programmer &amp; IT Professional</title>
+    <meta
+      name="description"
+      content="Portofolio Programmer & IT Professional: pengembangan SIMRS, integrasi Satu Sehat, bridging E-Klaim BPJS, dan IT Support."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+    <noscript
+      ><style>
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#beranda" class="brand">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-text">Portofolio</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#keahlian">Keahlian</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            type="button"
+            class="btn btn-primary btn-sm nav-download"
+            data-cv-download
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download CV
+          </button>
+          <button
+            type="button"
+            class="hamburger"
+            id="hamburger"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-greeting reveal">Halo, saya</p>
+          <h1 class="hero-name reveal" data-profile="name">MUHAMMAD IQBAL</h1>
+          <div class="hero-role reveal">
+            <span id="typewriter">Programmer</span
+            ><span class="type-cursor" aria-hidden="true">|</span>
+          </div>
+          <p class="hero-summary reveal">
+            Programmer &amp; IT Professional dengan fokus pada
+            <strong>pengembangan SIMRS</strong>,
+            <strong>integrasi sistem</strong> (Satu Sehat &amp; E-Klaim), serta
+            <strong>IT Support</strong> — dari analisis kebutuhan hingga
+            implementasi dan troubleshooting.
+          </p>
+          <div class="hero-actions reveal">
+            <button type="button" class="btn btn-primary" data-cv-download>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download CV
+            </button>
+            <a href="#pengalaman" class="btn btn-outline">Lihat Pengalaman</a>
+          </div>
+          <ul class="hero-meta reveal">
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span data-profile="location">Kudus, Jawa Tengah, Indonesia</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <a data-profile="email" data-profile-href="email" href="#"
+                >email@contoh.com</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="dot dot-red"></span
+              ><span class="dot dot-yellow"></span
+              ><span class="dot dot-green"></span>
+              <span class="code-title">bridging-satusehat.js</span>
+            </div>
+            <pre
+              class="code-body"
+            ><code><span class="cm">// Kirim hasil pemeriksaan lab ke Satu Sehat</span>
+<span class="kw">const</span> res = <span class="kw">await</span> satusehat.post(<span class="str">"/fhir/r4/Bundle"</span>, {
+  resourceType: <span class="str">"Bundle"</span>,
+  type: <span class="str">"transaction"</span>,
+  entry: [{
+    resource: {
+      resourceType: <span class="str">"DiagnosticReport"</span>,
+      status: <span class="str">"final"</span>,
+      code: { text: <span class="str">"Hematologi Lengkap"</span> }
+    }
+  }]
+});
+
+<span class="cm">// 201 Created — data terkirim</span></code></pre>
+            <div class="code-status">
+              <span class="pulse-dot"></span>
+              Bridging aktif — Laboratorium &amp; Radiologi
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ TENTANG ============ -->
+      <section id="tentang" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Tentang Saya</span>
+            <h2>Profil Profesional</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text reveal">
+              <p>
+                Saya adalah
+                <strong>Programmer dan IT Professional</strong> dengan
+                pengalaman di bidang
+                <strong
+                  >IT Support, pengembangan aplikasi, integrasi sistem, dan
+                  pengembangan Sistem Informasi Manajemen Rumah Sakit
+                  (SIMRS)</strong
+                >.
+              </p>
+              <p>
+                Saya memiliki pengalaman dalam menangani permasalahan teknis
+                perangkat keras dan perangkat lunak, pengelolaan infrastruktur
+                IT, pengembangan aplikasi berbasis web, integrasi sistem dengan
+                layanan eksternal, serta implementasi sistem yang mengikuti
+                kebutuhan dan regulasi di lingkungan rumah sakit.
+              </p>
+              <p>
+                Dalam pekerjaan, saya terbiasa melakukan analisis kebutuhan,
+                pengembangan fitur, integrasi sistem, troubleshooting,
+                pengujian, dokumentasi, hingga memastikan aplikasi dapat
+                digunakan dan berjalan sesuai kebutuhan pengguna.
+              </p>
+            </div>
+            <div class="about-points">
+              <div class="point-card reveal">
+                <div class="point-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                  </svg>
+                </div>
+                <h3>Bidang Utama</h3>
+                <p>
+                  Software Development, System Integration, dan Healthcare
+                  Technology.
+                </p>
+              </div>
+              <div class="point-card reveal">
+                <div class="point-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                </div>
+                <h3>Pendekatan Kerja</h3>
+                <p>
+                  Aplikasi tidak hanya harus berjalan secara teknis, tetapi juga
+                  mendukung alur kerja pengguna dan kebutuhan operasional di
+                  lapangan.
+                </p>
+              </div>
+              <div class="point-card reveal">
+                <div class="point-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <h3>Pengalaman Lapangan</h3>
+                <p>
+                  Terbiasa menghadapi masalah sistem secara langsung — dari
+                  troubleshooting perangkat IT hingga permasalahan integrasi
+                  antar sistem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PENGALAMAN ============ -->
+      <section id="pengalaman" class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Karier</span>
+            <h2>Pengalaman Profesional</h2>
+            <p>
+              Perjalanan profesional saya dari IT Support hingga Programmer dan
+              System Integrator SIMRS.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card timeline-card">
+                <div class="card-head">
+                  <div>
+                    <h3>Programmer</h3>
+                    <p class="card-sub">Rumah Sakit 'Aisyiyah Kudus</p>
+                  </div>
+                  <span class="badge badge-accent">Mei 2025 – Sekarang</span>
+                </div>
+                <p class="card-desc">
+                  Fokus pada pengembangan, pemeliharaan, dan integrasi aplikasi
+                  yang mendukung operasional rumah sakit — mulai dari analisis
+                  kebutuhan hingga implementasi sistem.
+                </p>
+                <ul class="feature-list">
+                  <li>
+                    Mengembangkan &amp; memelihara aplikasi SIMRS: Laboratorium,
+                    Radiologi, Fisioterapi, Hemodialisis, IBS, IGD, Kasir, dan
+                    modul penunjang lainnya.
+                  </li>
+                  <li>
+                    Analisis kebutuhan pengguna, perancangan alur sistem,
+                    pengembangan fitur, dan integrasi database.
+                  </li>
+                  <li>
+                    Pengujian, troubleshooting, dokumentasi, hingga implementasi
+                    sistem di lingkungan rumah sakit.
+                  </li>
+                  <li>
+                    Membangun bridging SIMRS dengan Satu Sehat Kemenkes RI
+                    (Laboratorium &amp; Radiologi).
+                  </li>
+                  <li>
+                    Mengembangkan Smart Claim — bridging E-Klaim untuk klaim
+                    pasien BPJS.
+                  </li>
+                  <li>
+                    Dipercaya sebagai konsultan teknis bridging E-Klaim untuk
+                    software house SIMRS.
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item reveal">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <div class="card timeline-card">
+                <div class="card-head">
+                  <div>
+                    <h3>IT Support</h3>
+                    <p class="card-sub">PT Sembilan Matahari Sakti</p>
+                  </div>
+                  <span class="badge">Kontrak 4 Bulan</span>
+                </div>
+                <p class="card-desc">
+                  Mendukung operasional IT perusahaan serta memastikan perangkat
+                  dan infrastruktur IT dapat digunakan dengan baik oleh
+                  pengguna.
+                </p>
+                <ul class="feature-list">
+                  <li>Pengecekan dan monitoring jaringan secara rutin.</li>
+                  <li>Penanganan permasalahan teknis yang dialami pengguna.</li>
+                  <li>
+                    Troubleshooting dan perbaikan komputer/laptop serta
+                    perawatan printer.
+                  </li>
+                  <li>Instalasi, konfigurasi, dan troubleshooting software.</li>
+                  <li>
+                    Pengecekan perangkat keras dan identifikasi masalah
+                    hardware.
+                  </li>
+                  <li>
+                    Inventarisasi dan dokumentasi seluruh aset IT, termasuk log
+                    harian aktivitas IT Support.
+                  </li>
+                </ul>
+                <p class="card-note">
+                  Memberikan dasar yang kuat dalam troubleshooting
+                  hardware/software/jaringan, asset management, dokumentasi IT,
+                  dan pelayanan pengguna.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROYEK ============ -->
+      <section id="proyek" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Portofolio Proyek</span>
+            <h2>Proyek &amp; Integrasi Utama</h2>
+            <p>
+              Fokus pekerjaan saya: membangun dan mengintegrasikan sistem yang
+              menunjang pelayanan rumah sakit.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="card project-card reveal">
+              <div class="project-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <h3>Pengembangan Aplikasi SIMRS</h3>
+              <p class="project-meta">Rumah Sakit 'Aisyiyah Kudus</p>
+              <p class="project-desc">
+                Mengembangkan berbagai aplikasi dan modul SIMRS untuk menunjang
+                proses pelayanan dan administrasi rumah sakit — dari analisis
+                kebutuhan, perancangan alur, hingga implementasi.
+              </p>
+              <div class="chip-group">
+                <span class="chip">Laboratorium</span>
+                <span class="chip">Radiologi</span>
+                <span class="chip">Fisioterapi</span>
+                <span class="chip">Hemodialisis</span>
+                <span class="chip">Instalasi Bedah Sentral</span>
+                <span class="chip">IGD</span>
+                <span class="chip">Kasir Rumah Sakit</span>
+                <span class="chip">+ modul lainnya</span>
+              </div>
+            </article>
+
+            <article class="card project-card reveal">
+              <div class="project-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+              <h3>Integrasi Satu Sehat</h3>
+              <p class="project-meta">
+                Kementerian Kesehatan RI — Laboratorium &amp; Radiologi
+              </p>
+              <ul class="project-list">
+                <li>
+                  Implementasi komunikasi API dan mapping data SIMRS ke format
+                  Satu Sehat.
+                </li>
+                <li>
+                  Implementasi resource berbasis <strong>FHIR</strong> serta
+                  pengelolaan identifier dan referensi antar-resource.
+                </li>
+                <li>
+                  Pengiriman data pasien, encounter, order pemeriksaan, dan
+                  hasil pemeriksaan.
+                </li>
+                <li>
+                  Handling response &amp; error API, logging untuk monitoring
+                  dan troubleshooting.
+                </li>
+                <li>
+                  Penyesuaian implementasi dengan spesifikasi integrasi yang
+                  berlaku.
+                </li>
+              </ul>
+            </article>
+
+            <article class="card project-card project-featured reveal">
+              <div class="project-head-row">
+                <div class="project-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="8" r="7" />
+                    <polyline
+                      points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                    />
+                  </svg>
+                </div>
+                <span class="badge badge-accent badge-glow"
+                  >Lolos Onboarding E-Klaim</span
+                >
+              </div>
+              <h3>Smart Claim — Bridging E-Klaim</h3>
+              <p class="project-meta">
+                Aplikasi bridging SIMRS × E-Klaim untuk klaim pasien BPJS
+              </p>
+              <ul class="project-list">
+                <li>
+                  Pengembangan aplikasi bridging SIMRS dengan sistem E-Klaim.
+                </li>
+                <li>
+                  Pengolahan dan transformasi data pasien serta pelayanan
+                  menjadi data klaim.
+                </li>
+                <li>
+                  Pengiriman data klaim, pengolahan response, dan
+                  troubleshooting bridging.
+                </li>
+                <li>
+                  Validasi data sebelum proses klaim, dokumentasi, dan logging
+                  integrasi.
+                </li>
+              </ul>
+            </article>
+
+            <article class="card project-card reveal">
+              <div class="project-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h3>Konsultan Bridging E-Klaim</h3>
+              <p class="project-meta">Software House pengembang SIMRS</p>
+              <ul class="project-list">
+                <li>
+                  Analisis kebutuhan integrasi SIMRS software house dengan
+                  E-Klaim.
+                </li>
+                <li>
+                  Pengembangan dan troubleshooting proses bridging serta
+                  analisis error.
+                </li>
+                <li>
+                  Arahan teknis implementasi &amp; memastikan data sesuai
+                  ketentuan E-Klaim.
+                </li>
+                <li>
+                  Persiapan sistem rumah sakit mitra untuk proses Onboarding
+                  E-Klaim.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ KEAHLIAN ============ -->
+      <section id="keahlian" class="section section-alt">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Kompetensi</span>
+            <h2>Keahlian Utama</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <div class="project-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <h3>Software Development</h3>
+              </div>
+              <div class="chip-group">
+                <span class="chip">Web Application Development</span>
+                <span class="chip">Backend Development</span>
+                <span class="chip">REST API Integration</span>
+                <span class="chip">Database Management</span>
+                <span class="chip">System Integration</span>
+                <span class="chip">System Maintenance</span>
+                <span class="chip">Troubleshooting</span>
+              </div>
+            </div>
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <div class="project-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                  </svg>
+                </div>
+                <h3>Healthcare IT</h3>
+              </div>
+              <div class="chip-group">
+                <span class="chip">SIMRS Development</span>
+                <span class="chip">Satu Sehat Integration</span>
+                <span class="chip">FHIR</span>
+                <span class="chip">E-Klaim Integration</span>
+                <span class="chip">BPJS Claim System</span>
+                <span class="chip">Healthcare Data Integration</span>
+                <span class="chip">Laboratory Information System</span>
+                <span class="chip">Radiology Information System</span>
+              </div>
+            </div>
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <div class="project-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                    />
+                  </svg>
+                </div>
+                <h3>IT Support</h3>
+              </div>
+              <div class="chip-group">
+                <span class="chip">Hardware Troubleshooting</span>
+                <span class="chip">Software Troubleshooting</span>
+                <span class="chip">Network Troubleshooting</span>
+                <span class="chip">Printer Troubleshooting</span>
+                <span class="chip">IT Asset Management</span>
+                <span class="chip">IT Documentation</span>
+                <span class="chip">User Technical Support</span>
+              </div>
+            </div>
+            <div class="card skill-card reveal">
+              <div class="skill-head">
+                <div class="project-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+                <h3>Professional Skills</h3>
+              </div>
+              <div class="chip-group">
+                <span class="chip">Problem Solving</span>
+                <span class="chip">System Analysis</span>
+                <span class="chip">Technical Documentation</span>
+                <span class="chip">System Testing</span>
+                <span class="chip">User Support</span>
+                <span class="chip">Technical Consultation</span>
+                <span class="chip">API Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HIGHLIGHTS ============ -->
+      <section id="highlights" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Pencapaian</span>
+            <h2>Career Highlights</h2>
+          </div>
+          <div class="highlight-grid">
+            <div class="highlight-item reveal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+              <p>
+                Berhasil lolos proses <strong>Onboarding E-Klaim</strong> dari
+                Kementerian Kesehatan RI.
+              </p>
+            </div>
+            <div class="highlight-item reveal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+              <p>
+                Mengembangkan integrasi <strong>Satu Sehat</strong> modul
+                Laboratorium &amp; Radiologi (API &amp; FHIR).
+              </p>
+            </div>
+            <div class="highlight-item reveal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+              <p>
+                Mengembangkan <strong>Smart Claim</strong> untuk bridging SIMRS
+                – E-Klaim guna mendukung klaim pasien BPJS.
+              </p>
+            </div>
+            <div class="highlight-item reveal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+              <p>
+                Dipercaya sebagai
+                <strong>konsultan teknis bridging E-Klaim</strong> untuk
+                software house pengembang SIMRS.
+              </p>
+            </div>
+            <div class="highlight-item reveal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+              <p>
+                Mengembangkan <strong>7+ modul SIMRS</strong> yang digunakan
+                operasional rumah sakit.
+              </p>
+            </div>
+            <div class="highlight-item reveal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+              <p>
+                Pengalaman lengkap dari <strong>IT Support</strong> hingga
+                pengembangan dan integrasi sistem rumah sakit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ KONTAK / FOOTER ============ -->
+    <footer id="kontak" class="footer">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Kontak</span>
+          <h2>Mari Berkolaborasi</h2>
+          <p>
+            Terbuka untuk diskusi, kolaborasi proyek, maupun kesempatan
+            profesional di bidang software development, system integration, dan
+            healthcare IT.
+          </p>
+        </div>
+
+        <div class="contact-grid reveal">
+          <a class="contact-item" data-profile-href="email" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <div>
+              <span class="contact-label">Email</span
+              ><span class="contact-value" data-profile="email"
+                >email@contoh.com</span
+              >
+            </div>
+          </a>
+          <a class="contact-item" data-profile-href="phone" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            <div>
+              <span class="contact-label">Telepon</span
+              ><span class="contact-value" data-profile="phone"
+                >+62 8xx-xxxx-xxxx</span
+              >
+            </div>
+          </a>
+          <div class="contact-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <div>
+              <span class="contact-label">Lokasi</span
+              ><span class="contact-value" data-profile="location"
+                >Kudus, Jawa Tengah, Indonesia</span
+              >
+            </div>
+          </div>
+          <a
+            class="contact-item"
+            data-profile-href="linkedin"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+              />
+              <path
+                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+              />
+            </svg>
+            <div>
+              <span class="contact-label">LinkedIn</span
+              ><span class="contact-value" data-profile="linkedin"
+                >https://www.linkedin.com/in/mrcahjos/</span
+              >
+            </div>
+          </a>
+          <a
+            class="contact-item"
+            data-profile-href="github"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              />
+            </svg>
+            <div>
+              <span class="contact-label">GitHub</span
+              ><span class="contact-value" data-profile="github"
+                >github.com/username-anda</span
+              >
+            </div>
+          </a>
+        </div>
+
+        <div class="footer-cta reveal">
+          <button type="button" class="btn btn-primary" data-cv-download>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download CV
+          </button>
+          <button type="button" class="link-btn" data-cv-print>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="6 9 6 2 18 2 18 9" />
+              <path
+                d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+              />
+              <rect x="6" y="14" width="12" height="8" />
+            </svg>
+            atau cetak / simpan sebagai PDF
+          </button>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="year">2026</span>
+            <span data-profile="name">MUHAMMAD IQBAL</span> — Dibuat dengan
+            HTML, CSS &amp; JavaScript.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Wadah versi cetak (CV ATS-friendly untuk fallback cetak) -->
+    <div id="print-resume" aria-hidden="true"></div>
+  </body>
+</html>
